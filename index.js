@@ -1,3 +1,3 @@
-const addon = require('bindings')('example.node');
+const napiAddImpl = require("./build/Release/example.node");
 
-console.log('This should be eight:', addon.add(3, 5));
+console.log('This should be eight:', napiAddImpl.add(3, 5));
