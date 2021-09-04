@@ -1,3 +1,3 @@
-const { add } = require("./build/Release/addon.node");
+const napiAddImpl = require("./build/Release/example.node");
 
-console.log(add(2, 3));
+console.log('This should be eight:', napiAddImpl.add(3, 5));
