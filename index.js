@@ -1,3 +1,3 @@
-const { add } = require("./build/Release/addon.node");
+const addon = require('bindings')('example.node');
 
-console.log(add(2, 3));
+console.log('This should be eight:', addon.add(3, 5));

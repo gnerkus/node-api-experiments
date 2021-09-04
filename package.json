@@ -1,11 +1,12 @@
 {
-  "name": "node-api-experiments",
+  "name": "simple-sum",
   "version": "0.0.1",
-  "description": "Experiments to learn the use of the Node API",
+  "description": "Sum two numbers via the Node API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "cmake-js compile"
+    "start": "node index.js",
+    "build": "node-gyp rebuild",
+    "clean": "node-gyp clean"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,8 @@
   "dependencies": {
     "node-addon-api": "4.1.0"
   },
+  "gypfile": true,
   "devDependencies": {
-    "cmake-js": "6.2.1"
+    "node-gyp": "8.2.0"
   }
 }
