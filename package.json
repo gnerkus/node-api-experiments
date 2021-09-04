@@ -1,0 +1,29 @@
+{
+  "name": "node-api-experiments",
+  "version": "0.0.1",
+  "description": "Experiments to learn the use of the Node API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnerkus/node-api-experiments.git"
+  },
+  "keywords": [
+    "C++",
+    "node_api"
+  ],
+  "author": "gnerkus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gnerkus/node-api-experiments/issues"
+  },
+  "homepage": "https://github.com/gnerkus/node-api-experiments#readme",
+  "dependencies": {
+    "node-addon-api": "4.1.0"
+  },
+  "devDependencies": {
+    "cmake-js": "6.2.1"
+  }
+}
