@@ -10,17 +10,17 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(BINARY ${CMAKE_PROJECT_NAME})
 
-set(SOURCES example.cpp)
-
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
-
-set(CMAKE_BUILD_TYPE Release)
-
 # Essential include files to build a node addon,
 # you should add this line in every CMake.js based project.
 include_directories(
   ${PROJECT_SOURCE_DIR}/include/
 )
+
+set(SOURCES example.cpp)
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
+
+set(CMAKE_BUILD_TYPE Release)
 
 add_executable(${BINARY} ${SOURCES})
 

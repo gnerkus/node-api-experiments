@@ -25,7 +25,12 @@
   "dependencies": {
     "node-addon-api": "4.1.0"
   },
-  "gypfile": true,
+  "files": [
+    "index.js",
+    "src/**/*.cpp",
+    "include/**/*.hpp",
+    "binding.gyp"
+  ],
   "devDependencies": {
     "node-gyp": "8.2.0"
   }
